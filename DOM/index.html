@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DOM</title>
+<style>
+nav {
+	display: flex;
+	list-style: none;
+}
+
+li {
+	padding: 20px;
+	margin:15px;
+}
+
+.skyblue {
+	background-color: skyblue;
+	color: black;
+}
+
+.lightgreen {
+	background-color: lightgreen;
+	color: black;
+}
+
+.textColor {
+	color: red;
+}
+</style>
+</head>
+<body>
+	<h1>DOM</h1>
+	<nav>
+		<li>home</li>
+		<li>contact</li>
+		<li>about</li>
+	</nav>
+	<p id="pid">Used for inner and outer HTML</p></br>
+	
+	<div id="attributeID" class="attributeClass" data-myAttribute="CustomAttribute">
+		This is used for attribute functions
+	</div></br>
+	
+	<div id="adjacent">This is used for insertAdjacentHTML</div></br>
+	
+	<div id="clsadd">This is used for adding class</div></br>
+	
+	<div id="eventButton"><button id="btnevt">Click me</button></div></br>
+</body>
+<script src="app.js"></script>
+</html>

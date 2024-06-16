@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event</title>
+    </head>
+    <body>
+        Name: <input type="text" onfocus="focus1()" onblur="blur1()">
+        <span id="name"></span>
+        <br>
+        Location: <input type="text" onfocus="focus2()" onblur="blur2()">
+        <span id="loc"></span>
+        <br>
+        Key: <input type="text" id="inp" onkeydown="down()" onkeyup="up()">
+        <span id="show"></span>
+        <br>
+        Keypress: <input type="text" onkeypress="count()">
+        <span id="count"></span>
+        <br>
+        <form name="test">
+            Enter number: <input type="number" name="" id="num">
+            <input type="radio" name="op" id="" value="2" onchange="calc()">*2
+            <input type="radio" name="op" id="" value="3" onchange="calc()">*3
+            <input type="radio" name="op" id="" value="4" onchange="calc()">*4
+        </form>
+        <form name="test1">
+            Enter number: <input type="number" name="" id="num">
+            <input type="checkbox" name="op1" id="" value="2" onchange="calc()">*2
+            <input type="checkbox" name="op2" id="" value="3" onchange="calc()">*3
+            <input type="checkbox" name="op3" id="" value="4" onchange="calc()">*4
+        </form>
+        <div id="div" style="width:30%; height:30%; background-color: brown;" onmouseenter="enter()" onmouseout="out()" onmousemove="move()">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quos ea a praesentium tempora ipsa nam, aliquam perspiciatis veritatis obcaecati, eius quam atque molestiae iusto voluptate repudiandae dicta id non?</div>
+        <p id="c1"></p>
+        <p id="c2"></p>
+        <p id="c3"></p>
+        <div id="div" onmouseover="change()" style="border: 2px solid black;">
+            <h1 style="background-color: red;">head</h1>
+            <p style="background-color: green; display: none;" id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt, sit ducimus dicta modi delectus saepe, natus, dolorem suscipit numquam quos facere cumque impedit hic sint. Est ipsam non itaque.</p>
+        </div>
+        <p id="count"></p>
+    </body>
+    <script src="app.js"></script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+    <body>
+        <form name="test" onsubmit="return validate()">
+            Enter name: <input type="text" name="name" required>
+            <br>
+            Enter Age: <input type="number" name="age" required>
+            <br>
+            Password: <input type="password" name="password" required>
+            <br>
+            Confirm Password: <input type="password" name="cpassword" required>
+            <br>
+            Select gender: <input type="radio" name="male">M
+            <input type="radio" name="female">F
+            <br>
+            <select name="loc">
+                <option value="kolkata">kolkata</option>
+                <option value="mumbai">mumbai</option>
+                <option value="chennai">chennai</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <hr>
+        <!-- ============================================== -->
+        <form name="test1" onsubmit="return validate1()">
+            select language:
+            <select name="lang" multiple>
+                <option value="bengali">bengali</option>
+                <option value="english">english</option>
+                <option value="hindi">hindi</option>
+                <option value="tamil">tamil</option>
+                <option value="telegu">telegu</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <hr>
+        <!-- ============================================== -->
+        <form name="test2" onsubmit="return validate2()">
+            Select Degree:
+            <input type="checkbox" name="deg" value="graduate">Graduate
+            <input type="checkbox" name="deg" value="bca">BCA
+            <input type="checkbox" name="deg" value="mca">MCA
+            <input type="checkbox" name="deg" value="b.tech">B.tech
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <!-- ============================================== -->
+        Enter Sentence: <input type="text" name="sen" id="sen">
+        <input type="submit" value="Submit" onclick="getting()">
+    </body>
+    <script src="app.js"></script>
+</html>
